@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 st.title('ทดสอบการเขียนเว็บด้วย Streamlit')
 col1, col2 = st.columns(2)
@@ -27,3 +28,7 @@ with colx2:
     st.image("./pic/iris2.jpg")
 with colx3:
     st.image("./pic/iris3.jpg")    
+
+dt = pd.read_csv('./data/iris.csv')
+st.write(dt.head(10))
+st.button("showChart")
