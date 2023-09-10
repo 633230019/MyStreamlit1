@@ -13,12 +13,17 @@ with col2:
     st.markdown("มหาวิทยาลัยราชภัฏนครปฐม")
 
 html_1 = """
-<div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+<div style="background-color:#ABEBC6;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h5>สถิติข้อมูลดอกไม้</h5></center>
 </div>
 """
 st.markdown(html_1, unsafe_allow_html=True)
 st.markdown("")
 
-st.header('สิทธิพงษ์ แจ้งไพร')
-st.subheader('My sub')
+colx1, colx2, colx3 = st.columns(3)
+with colx1:
+    st.image("./pic/iris1.jpg")
+with colx2:
+    st.image("./pic/iris2.jpg")
+with colx3:
+    st.image("./pic/iris3.jpg")    
