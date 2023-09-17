@@ -46,3 +46,17 @@ if st.button("show chart"):
 else:
     st.button("Don't show chart")
     
+html_2 = """
+<div style="background-color:#ABEBC6;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+<center><h5>การทำนายคลาสดอกไม้</h5></center>
+</div>
+"""
+st.markdown(html_2, unsafe_allow_html=True)
+st.markdown("")
+
+pt_len = st.slider("กรุณาเลือกข้อมูล petal.length",0,10)
+pt_wd = st.slider("กรุณาเลือกข้อมูล petal.width",0,10)
+
+sp_len = st.number_input("กรุณาเลือกข้อมูล sepal.length")
+sp_wd = st.number_input("กรุณาเลือกข้อมูล sepal.width")
+
